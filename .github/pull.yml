@@ -1,7 +1,8 @@
-version: "1"
+version: "2"
 rules:                      # Array of rules
   - base: master            # Required. Target branch
-    upstream: FabioMiselli:master    # Required. Must be in the same fork network.
+    upstream: fmiselli:master    # Required. Must be in the same fork network.
     mergeMethod: hardreset  # Optional, one of [none, merge, squash, rebase, hardreset], Default: none.
   - base: develop
-    upstream: develop        # Required. Can be a branch in the same forked repo.
+    upstream: fmiselli:develop        # Required. Can be a branch in the same forked repo.
+    mergeMethod: hardreset  # Optional, one of [none, merge, squash, rebase, hardreset], Default: none.    
